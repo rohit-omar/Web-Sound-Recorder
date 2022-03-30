@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sound Recorder</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="recording-bar"></div>
+      <button id="start-Recording" onclick="startRecording()">
+        Start Recording
+      </button>
+      <button id="pause-Recording" onclick="pauseRecording1()">
+        Pause Recording
+      </button>
+      <button id="resume_Recording" onclick="resumeRecording1()">
+        Resume Recording
+      </button>
+      <button id="stop-Recording" onclick="stopRecording1()">
+        Stop Recording
+      </button>
+    </div>
+    <div>
+      <audio id="my-audio" controls autoplay>
+        <!-- <source id="source" type="audio/ogg" /> -->
+      </audio>
+    </div>
+
+    <!-- <audio controls preload="none">
+      <source
+        src="https://cdnsongs.com/music/data/Single_Track/202203/Jawani/128/Jawani_1.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio> -->
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.6/RecordRTC.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
